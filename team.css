@@ -1,0 +1,211 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Yatra+One');
+
+header {
+    
+    font-family: cursive;
+    font-size: 40px;
+    color: #2ec408;
+    text-align: center;
+    position: relative;
+    padding: 60px;
+    overflow: hidden;
+}
+
+
+.back{
+    
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    z-index: -1;
+}
+nav {
+    background-image: linear-gradient(90deg,rgb(144, 211, 205),rgb(172, 161, 221));
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+}
+
+body{
+  background: #8c7ae6;
+}
+/*align the heading*/
+.wrapper{
+    margin-top: 60px;
+    text-align: center;
+  }
+/*main headding editor*/
+.wrapper h1{
+    font-family: 'Yatra One', cursive;
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+/*to align the persons*/
+.our_team{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+/*canvas background*/
+.our_team .team_member{
+  width: 250px;
+  margin: 5px;
+  background-image: linear-gradient(45deg,rgb(241, 46, 199),rgb(224, 211, 20));
+  padding: 20px 10px;
+}
+/*ring around the picture*/
+.our_team .team_member .member_img{
+    background-image: linear-gradient(45deg,rgb(90, 175, 90),rgb(5, 113, 255)); 
+  max-width: 190px;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+/*to make image fit*/
+.our_team .team_member .member_img img{
+    width: 100%;
+    height: 100%;
+  }
+/*name style*/
+.our_team .team_member h3{
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  margin: 15px 0 0px;
+}
+/*post font size*/
+.our_team .team_member span{
+    font-size: 10px;
+  }
+/*format of text below image*/
+.our_team .team_member p{
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/*for hover button*/
+.d-1 {
+    --c: #1095c1; /* the color */
+    --b: .1em;    /* border length*/
+    --d: 20px;    /* the cube depth */
+    --h: 1.2em;   /* the height */
+    
+    --_s: calc(var(--d) + var(--b));
+  
+    line-height: var(--h);
+    color: #0000;
+    text-shadow: 
+      0 calc(-1*var(--_t,0em)) var(--c), 
+      0 calc(var(--h) - var(--_t,0em)) #fff;
+    border: solid #0000;
+    overflow: hidden;
+    border-width: var(--b) var(--b) var(--_s) var(--_s);
+    background:
+      linear-gradient(var(--c) 0 0) 100% 100%
+       /101% var(--_p,0%) no-repeat,
+      conic-gradient(at left var(--d)  bottom var(--d),
+        #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+      conic-gradient(at left var(--_s) bottom var(--_s),
+        #0000 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+    transform: translate(calc(var(--d)/-1),var(--d));
+    clip-path: 
+      polygon(
+       var(--d) 0%, 
+       var(--d) 0%, 
+       100% 0%, 
+       100% calc(100% - var(--d)),
+       100% calc(100% - var(--d)),
+       var(--d) calc(100% - var(--d))
+      );
+    transition: 0.5s;
+  }
+  .d-1:hover {
+    transform: translate(0,0);
+    clip-path: 
+      polygon(
+       0% var(--d), 
+       var(--d) 0%, 
+       100% 0%, 
+       100% calc(100% - var(--d)), 
+       calc(100% - var(--d)) 100%, 
+       0% 100%
+     );
+    --_t: var(--h);
+    --_p: 105%;
+  }
+  
+  .d-2 {
+    --c: #CC333F; /* the color */
+    --b: .1em;    /* border length*/
+    --d: 20px;    /* the cube depth */
+    --h: 1.2em;   /* the height */
+    
+    --_s: calc(var(--d) + var(--b));
+    color: #0000;
+    text-shadow: 
+      0 calc(-1*var(--_t,0em)) var(--c), 
+      0 calc(var(--h) - var(--_t,0em)) #fff;
+    border: solid #0000;
+    overflow: hidden;
+    border-width: var(--b) var(--_s) var(--_s) var(--b);
+    background:
+      linear-gradient(var(--c) 0 0) -1px 100%
+       /101% var(--_p,0%) no-repeat,
+      conic-gradient(from -90deg at right var(--d)  bottom var(--d),
+        #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+      conic-gradient(at right var(--_s) bottom var(--_s),
+        var(--c) 270deg,#0000 0) 100% 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+    transform: translate(var(--d),var(--d));
+    clip-path: 
+      polygon(
+        0% 0%,
+        calc(100% - var(--d)) 0%,
+        calc(100% - var(--d)) 0%,
+        calc(100% - var(--d)) calc(100% - var(--d)),
+        0 calc(100% - var(--d)),
+        0 calc(100% - var(--d))
+      );
+    transition: 0.5s;
+  }
+  .d-2:hover {
+    transform: translate(0,0);
+    clip-path: 
+      polygon(
+        0% 0%,
+        calc(100% - var(--d)) 0%,
+        100% var(--d),
+        100% 100%,
+        var(--d) 100%,
+        0 calc(100% - var(--d))
+      );
+    --_t: var(--h);
+    --_p: 105%;
+  }
+  
+  
+ 
+  h3 {
+    font-family: system-ui, sans-serif;
+    font-size: 3rem;
+    margin:0;
+    cursor: pointer;
+    padding: 0 .1em;
+  }
+ 
+
